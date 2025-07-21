@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vivek - Reel Creator & Content Artist</title>
+  <!-- Open Graph Meta Tags for Social Media Preview -->
+  <meta property="og:title" content="Vivek - Reel Creator & Content Artist" />
+  <meta property="og:image" content="https://devauradigital.github.io/vivekcontentcreator/vivek.png" />
+  <meta property="og:description" content="Digital Visiting Card of Vivek, a passionate Reel Creator & Content Artist based in Ahmedabad." />
+  <meta property="og:image:alt" content="Portrait of Vivek" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://devauradigital.github.io/vivekcontentcreator/" />
+  <meta property="og:site_name" content="Vivek - Content Creator" />
+  <!-- Additional Meta Tags for SEO and Compatibility -->
+  <meta name="description" content="Digital Visiting Card of Vivek, a Reel Creator & Content Artist specializing in short-form videos for events and brands." />
+  <meta name="image" content="https://devauradigital.github.io/vivekcontentcreator/vivek.png" />
+  <meta name="author" content="Vivek" />
+  <meta name="robots" content="index, follow" />
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vivek - Reel Creator & Content Artist, Ahmedabad" />
+  <meta name="twitter:description" content="Connect with Vivek for creative short-form video content for weddings, corporate events, and more." />
+  <meta name="twitter:image" content="https://devauradigital.github.io/vivekcontentcreator/vivek.png" />
+  <!-- Favicon -->
+  <link rel="icon" href="https://devauradigital.github.io/vivekcontentcreator/vivek.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1a0033;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff;
+    }
+    .container {
+      max-width: 400px;
+      width: 100%;
+      margin: 3rem auto 5rem auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .card {
+      background: linear-gradient(145deg, #2a004d, #3b0075);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #ff4d94;
+      margin-bottom: 2rem;
+    }
+    .profile-card {
+      background: #2a004d;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      transition: transform 0.3s ease;
+    }
+    .profile-card:hover {
+      transform: scale(1.02);
+    }
+    .profile-image {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      border-radius: 1.25rem;
+      overflow: hidden;
+    }
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: brightness(0.9) contrast(1.2);
+    }
+    .image-overlay {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #1d0034);
+    }
+    .profile-info {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 2rem;
+      color: white;
+      text-shadow: 0 0 8px rgba(0,0,0,0.8);
+    }
+    .profile-info h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .profile-info .subtitle {
+      font-weight: 400;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ff4d94;
+      padding-bottom: 0.75rem;
+    }
+    .section-header .material-icons {
+      font-size: 1.8rem;
+      color: #ff4d94;
+    }
+    .section-header h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    .info p, .info li {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #e0e0e0;
+    }
+    .info .label {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: #ffffff;
+    }
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #ff4d94;
+      color: white;
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      margin-top: 0.75rem;
+      border: 1px solid #ffffff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn-action:hover {
+      background-color: #ffffff;
+      color: #ff4d94;
+    }
+    .btn-action .material-icons {
+      font-size: 1.1rem;
+      color: inherit;
+    }
+    .footer {
+      text-align: center;
+      color: #ffffff;
+      font-size: 0.875rem;
+      margin-top: 2rem;
+    }
+    .footer a {
+      color: #ff4d94;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 639px) {
+      .container {
+        max-width: 365px;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
+      .profile-card, .card {
+        max-width: 360px;
+      }
+      .profile-image {
+        height: 330px;
+      }
+      .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .profile-info h1 {
+        font-size: 1.5rem;
+      }
+      .profile-info .subtitle {
+        font-size: 0.875rem;
+      }
+      .section-header h2 {
+        font-size: 1.125rem;
+      }
+      .info p, .info li {
+        font-size: 0.875rem;
+      }
+      .btn-action {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+    @media (min-width: 1024px) {
+      .container {
+        max-width: 450px;
+      }
+      .profile-card, .card {
+        max-width: 450px;
+      }
+      .profile-image {
+        height: 450px;
+      }
+      .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="profile-card">
+      <div class="profile-image">
+        <img src="vivek.png" alt="Portrait of Vivek" />
+        <div class="image-overlay"></div>
+        <div class="profile-info">
+          <h1>Vivek</h1>
+          <div class="subtitle">Reel Creator & Content Artist, Ahmedabad</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <span class="material-icons">person</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="info">
+        <p>Hi, I’m Vivek, a passionate Reel Creator & Content Artist based in Ahmedabad. I specialize in producing high-energy, short-form videos that truly connect with audiences — from Instagram Reels to YouTube Shorts and more.</p>
+      </div>
+    </section>
+    
+    <section class="card">
+      <div class="section-header">
+        <span class="material-icons">videocam</span>
+        <h2>Events & Functions I Cover</h2>
+      </div>
+      <div class="info">
+        <ul class="list-disc pl-5">
+          <li>Weddings & Pre-Wedding Shoots</li>
+          <li>Corporate & Brand Events</li>
+          <li>College Fests, Concerts & Cultural Shows</li>
+          <li>Religious and Traditional Celebrations</li>
+          <li>Travel Diaries, Vlogs & Behind-the-Scenes Content</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <span class="material-icons">email</span>
+        <h2>Let's Collaborate</h2>
+      </div>
+      <div class="info">
+        <p>Got a project, event, or brand that needs a creative edge? Let’s connect and create something unforgettable together.</p>
+        <button class="btn-action" onclick="window.open('https://wa.me/919825313124?text=Hello%20Vivek,%20I%20would%20like%20to%20collaborate%20on%20a%20project!', '_blank')">
+          <span class="material-icons">chat</span> Contact Me
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Powered by <a href="https://devauradigital.com" target="_blank">DevAura Digital</a>
+    </footer>
+  </main>
+  <script>
+    // No additional JavaScript needed for this version
+  </script>
+</body>
+</html>
